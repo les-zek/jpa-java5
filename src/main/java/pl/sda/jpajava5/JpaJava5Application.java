@@ -1,5 +1,7 @@
 package pl.sda.jpajava5;
-
+/*
+* started Ultimate version of Intellij
+ */
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
