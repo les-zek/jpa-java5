@@ -1,7 +1,8 @@
 package pl.sda.jpajava5;
 /*
-* started Ultimate version of Intellij
+ * started Ultimate version of Intellij
  */
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -55,14 +56,14 @@ public class JpaJava5Application implements CommandLineRunner {
                 .title(" KOLOR ")
                 .questions(questions)
                 .build();
-     quiz =    quizRepository.save(quiz);
+        quiz = quizRepository.save(quiz);
 
-        Answer answer =Answer.builder()
+        Answer answer = Answer.builder()
                 .optionNumber(2)
                 .question(question)
                 .build();
         answer = answerRepository.save(answer);
-        Set <Answer> answers = new HashSet<>();
+        Set<Answer> answers = new HashSet<>();
         CompletedQuiz completedQuiz = CompletedQuiz.builder()
                 .quiz(quiz)
                 .answers(answers)
